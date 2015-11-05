@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="z3ntu" fetch="https://github.com/z3ntu" /> 
+  <project path="device/fp/FP1" name="android_device_fp_FP1" remote="z3ntu" revision="cm-11.0" />
+  <project path="kernel/fp/FP1" name="android_kernel_fp_FP1" remote="z3ntu" revision="cm-11.0" />
+</manifest>
