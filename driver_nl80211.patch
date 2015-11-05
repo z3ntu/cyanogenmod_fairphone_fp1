@@ -1,0 +1,20 @@
+*** driver_nl80211_old.c	2015-11-02 19:15:25.306110000 +0100
+--- driver_nl80211_new.c	2015-11-03 21:04:07.934995000 +0100
+***************
+*** 323,329 ****
+--- 323,337 ----
+  static int android_pno_stop(struct i802_bss *bss);
+  #endif /* ANDROID */
+  #ifdef ANDROID_P2P
++ 
++ //DIRTY PATCH by z3ntu
++ #define ANDROID_P2P_STUB
++ 
+  #ifdef ANDROID_P2P_STUB
++ 
++ //2ND PART OF PATCH by z3ntu
++ #undef ANDROID_P2P_STUB
++ 
+  int wpa_driver_set_p2p_noa(void *priv, u8 count, int start, int duration) {
+         return -1;
+  }

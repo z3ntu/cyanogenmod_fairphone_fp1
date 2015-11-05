@@ -29,7 +29,9 @@ You "should" (actually it's not good) get an error, which says that copying `thr
 
 You also should get an error that a file with the name `audio` in the filename failed to copy. As long as there are not two of these errors it is fine.
 
-Dirty hacks in another file incoming! (not documented yet!)
+Now you have to patch `driver_nl80211.c`. For that download `driver_nl80211.patch` from this repo and place it in `~/android`. And then execute:
+- `croot`
+- `patch -b external/wpa_supplicant_8/hostapd/src/drivers/driver_nl80211.c ../driver_nl80211.patch`
 
 Start building (this will take a REALLY long time, probably at least 1.5 hours!)
 - `croot`
