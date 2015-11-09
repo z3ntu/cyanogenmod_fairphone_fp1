@@ -6,9 +6,9 @@ Follow http://wiki.cyanogenmod.org/w/Build_for_one to get all prerequisites unti
 
 Download Cyanogenmod 11.0 (this will take about an hour with a decent internet connection (75 MBit/s)
 - `cd ~/android/system/`
-- `. build/envsetup.sh` (note the dot!)
 - `repo init -u https://github.com/CyanogenMod/android.git -b cm-11.0`
 - `repo sync`
+- `. build/envsetup.sh` (note the dot and the space!)
 
 Get Fairphone specific Android Kernel and Android Device:
 Copy `local_manifest.xml` from this repo into .repo/local_manifests/ (you may have to create this folder)
@@ -25,7 +25,7 @@ You "should" (actually it's not good) get an error, which says that copying `thr
 - `chmod 777 /sdcard/throttle.sh`
 - `exit`
 - `adb pull /sdcard/throttle.sh`
-- Copy this file into `~/android/system/vendor/fp/FP1/proprietary/etc/`
+- Copy this file into `vendor/fp/FP1/proprietary/etc/`
 
 You also should get an error that a file with the name `audio` in the filename failed to copy. As long as there are not two of these errors it is fine.
 
