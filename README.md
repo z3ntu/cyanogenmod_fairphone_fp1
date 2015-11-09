@@ -29,7 +29,7 @@ You "should" (actually it's not good) get an error, which says that copying `thr
 
 You also should get an error that a file with the name `audio` in the filename failed to copy. As long as there are not two of these errors it is fine.
 
-Download [https://jackpal.github.io/Android-Terminal-Emulator/downloads/Term.apk](https://jackpal.github.io/Android-Terminal-Emulator/downloads/Term.apk) and place it in `vendor/cm/proprietary/`.
+Run `vendor/cm/get-prebuilts`.
 
 Now you have to patch `driver_nl80211.c`. For that download `driver_nl80211.patch` from this repo and place it in `~/android`. And then execute:
 - `croot`
